@@ -1,9 +1,18 @@
-import { Router, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import GlobalStyle from "./assets/globalStyles";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import { ThemeProvider } from "styled-components";
+import { customTheme } from "./assets/customTheme";
 function App() {
 	return (
-		<>
-			<Router></Router>
-		</>
+		<ThemeProvider theme={customTheme}>
+			<>
+				<GlobalStyle />
+				<Routes>
+					<Route path='/' element={<LandingPage />} />
+				</Routes>
+			</>
+		</ThemeProvider>
 	);
 }
 
