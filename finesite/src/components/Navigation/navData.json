@@ -1,0 +1,24 @@
+{
+	"navLinks": [
+		{
+			"text": "About",
+			"link": "/About"
+		},
+		{
+			"text": "Blogs",
+			"link": "/Blogs"
+		},
+		{
+			"img": "",
+			"link": "/"
+		},
+		{
+			"text": "Clients",
+			"link": "/Clients"
+		},
+		{
+			"text": "Contact",
+			"link": "/Contact"
+		}
+	]
+}

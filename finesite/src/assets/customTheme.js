@@ -22,7 +22,7 @@ export const customTheme = {
 	bg: {
 		base: colors.black,
 		accent: colors.lightYellow,
-		complementary: colors.gray,
+		complementary: colors.complementary2,
 		cta: colors.lightYellow,
 	},
 	text: {
