@@ -15,9 +15,6 @@
   src: local('Montserrat'), url(../src/assets/fonts/montserrat/Montserrat-Regular.ttf) format('truetype');
 }
 
-*{
-  background-image: url(./assets/images/background-photo.jpg);
-}
 body {
   margin: 0;
   padding: 0;
@@ -27,6 +24,9 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/images/background-photo.jpg) !important;
 }
 
 code {

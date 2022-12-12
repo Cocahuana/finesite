@@ -12,9 +12,9 @@ import navData from "./components/Navigation/navData.json";
 function App() {
 	const { navLinks } = navData;
 	const navComponents = [
-		<LandingPage />,
 		<About />,
 		<Blogs />,
+		<LandingPage />,
 		<Clients />,
 		<Contact />,
 	];
