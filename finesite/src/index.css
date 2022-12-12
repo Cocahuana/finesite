@@ -14,7 +14,12 @@
   font-family: 'Montserrat';
   src: local('Montserrat'), url(../src/assets/fonts/montserrat/Montserrat-Regular.ttf) format('truetype');
 }
-
+/* Usar cuando sea el momento */
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 body {
   margin: 0;
   padding: 0;
@@ -27,8 +32,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/images/background-photo.jpg) !important;
+
+  
+}
+::-webkit-scrollbar {
+  width: 0.8rem;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+  border: 2px solid #555;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

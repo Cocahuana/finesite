@@ -6,14 +6,20 @@ const CustomButtom = styled.button`
 	font-family: ${(props) => props.fontFamily};
 	font-size: ${(props) => props.fontSize};
 	width: ${(props) => props.w};
+	height: ${(props) => props.h};
 	text-decoration: none;
 	transition: ${(props) => props.transition};
 	padding: ${(props) => props.p};
+	padding-left: ${(props) => props.pl || props.px};
+	padding-right: ${(props) => props.pr || props.px};
 	line-height: ${(props) => props.lineHeight};
 	font-weight: ${(props) => props.fontWeight};
 	&:hover {
 		background-color: ${(props) => props.bgHover};
 	}
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
 `;
 
 CustomButtom.defaultProps = {
@@ -22,17 +28,26 @@ CustomButtom.defaultProps = {
 	color: customTheme.text.black,
 	fontFamily: customTheme.ff.base,
 	fontSize: "1.5rem",
-	w: "10rem",
+	w: "auto",
+	h: "4.3125rem",
 	transition: "all 0.5s ease",
-	p: "6px",
 	lineHeight: "30px",
 	fontWeight: "700",
+	px: "1.5rem",
 };
 function Button(props) {
 	const { children } = props;
 	return (
 		<>
-			<CustomButtom as='a' href='#'>
+			<CustomButtom
+				as='a'
+				href='#'
+				w={props.w}
+				h={props.h}
+				px={props.px}
+				pl={props.pl}
+				pr={props.pr}
+			>
 				{children}
 			</CustomButtom>
 		</>

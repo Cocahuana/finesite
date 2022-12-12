@@ -1,0 +1,20 @@
+{
+	"services": [
+		{
+			"title": "Efficient & Reliable Web Design",
+			"text": "We deliver top quality web-services that will simplify everything for your business. Website design, redesign, development, SEO and maintenance. We provide an efficient service while paying very careful attention to every aspect of your website."
+		},
+		{
+			"title": "Responsive & Accessible Design",
+			"text": "Our designs adjust its layout and content to best fit every device and viewport, whether that's desktop, laptop, tablet or smartphone. This allows for a consistent experience for users no matter how they access the site."
+		},
+		{
+			"title": "Search Engine Optimization (SEO)",
+			"text": "We ensure that your website appears in the top of the search results using our knowledge on keyword research, on-page optimization, use of keyword-rich titles and descriptions, unique content creation and link building."
+		},
+		{
+			"title": "Efficient & Reliable Web Design",
+			"text": "Websites are one of the most effective ways to reach customers, build brand awareness, generate leads, and drive sales. Creating or redesigning your website can have a huge impact in your company, with results like increased traffic, higher search engine rankings and more customers overall."
+		}
+	]
+}

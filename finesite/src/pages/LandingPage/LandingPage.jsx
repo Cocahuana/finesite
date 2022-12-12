@@ -1,89 +1,106 @@
 // import goldenLogoNoText from "../../assets/images/LogoGoldenNoText.svg";
 import Button from "../../components/ui/Button/Button";
-import { Flex, Text, Heading } from "@chakra-ui/react";
+import { Flex, Heading, Box } from "@chakra-ui/react";
 import ArrowDown from "../../components/ui/SVG/ArrowDown";
 import PersonWithLaptop from "../../components/ui/SVG/PersonWithLaptop";
 import PersonTouchingCellphone from "../../components/ui/SVG/PersonTouchingCellphone";
 import ThreeDevices from "../../components/ui/SVG/ThreeDevices";
-import SVGLogo from "../../components/ui/SVG/SVGLogo";
+import { customTheme } from "../../assets/customTheme";
+import WrapperWithSVG from "./components/WrapperWithSVG";
+import ContentCard from "./components/ContentCard";
+import contentData from "./components/data/content.json";
+import Packages from "./components/Packages";
 // import { Link } from "react-router-dom";
 function LandingPage() {
+	const { services } = contentData;
 	return (
-		<>
-			<Flex w='full' h='100vh' flexDirection={"column"}>
-				<Heading as='h2' fontSize='7.5rem'>
-					Finesite
-				</Heading>
-				<Heading as='h3' fontSize='3rem'>
-					Branding & Design Agency
-				</Heading>
-				<Heading as='h4' fontSize='2rem'>
-					Create. Design. Inspire
-				</Heading>
-				<Button>See Our Work</Button>
-				<ArrowDown />
-				<PersonWithLaptop />
-				<PersonTouchingCellphone />
-			</Flex>
-			<Flex bg='green' w='full' h='100vh'>
-				<Heading as='h2' fontSize='2rem' color='#F7DB5F'>
-					Efficient & Reliable Web Design
-				</Heading>
-				<Text fontSize={"20px"}>
-					We deliver top quality web-services that will simplify
-					everything for your business. Website design, redesign,
-					development, SEO and maintenance. We provide an efficient
-					service while paying very careful attention to every aspect
-					of your website.
-				</Text>
-				<Heading as='h2' fontSize='2rem' color='#F7DB5F'>
-					Efficient & Reliable Web Design
-				</Heading>
-				<Text fontSize='20px'>
-					Our designs adjust its layout and content to best fit every
-					device and viewport, whether that's desktop, laptop, tablet
-					or smartphone. This allows for a consistent experience for
-					users no matter how they access the site.
-				</Text>
-				<ThreeDevices />
-				<Heading as='h2' fontSize='2rem' color='#F7DB5F'>
-					Search Engine Optimization (SEO)
-				</Heading>
-				<Text fontSize={"20px"}>
-					We ensure that your website appears in the top of the search
-					results using our knowledge on keyword research, on-page
-					optimization, use of keyword-rich titles and descriptions,
-					unique content creation and link building.
-				</Text>
-				<Heading as='h2' fontSize='2rem' color='#F7DB5F'>
-					Efficient & Reliable Web Design
-				</Heading>
-				<Text fontSize='20px'>
-					Websites are one of the most effective ways to reach
-					customers, build brand awareness, generate leads, and drive
-					sales. Creating or redesigning your website can have a huge
-					impact in your company, with results like increased traffic,
-					higher search engine rankings and more customers overall.
-				</Text>
-			</Flex>
-			<Flex bg='yellow' w='full' h='100vh'>
-				<SVGLogo />
-				<Text fontSize='64px'>Don’t know how much it’ll cost?</Text>
-				<Text fontSize='32px'>
-					See a list of templates that will guide you through our
-					usual pricing.
-				</Text>
+		<Box>
+			<Flex
+				w='full'
+				minH='80vh'
+				maxH='80vh'
+				flexDirection={"column"}
+				justifyContent='space-between'
+				alignItems='center'
+				py='2%'
+				mx='9.375rem'
+			>
+				<Flex w='100%' minH='70vh'>
+					<Flex
+						w='50%'
+						flexDirection={"column"}
+						alignItems='flex-start'
+						justifyContent='flex-end'
+					>
+						<Flex
+							flexDirection={"column"}
+							alignItems='flex-start'
+							justifyContent='space-evenly'
+							letterSpacing='0.055rem'
+							mb='2rem'
+						>
+							<Heading
+								as='h1'
+								fontSize='7.5rem'
+								my='1rem'
+								color={customTheme.text.accent}
+							>
+								Finesite
+							</Heading>
+							<Heading as='h2' fontSize='3rem' my='1rem'>
+								Branding & Design Agency
+							</Heading>
+							<Heading as='h3' fontSize='2rem' my='1rem'>
+								Create. Design. Inspire
+							</Heading>
+						</Flex>
+						<Button w='auto'>See Our Work</Button>
+					</Flex>
+					<Flex w='50%' py='2%'>
+						<PersonWithLaptop />
+					</Flex>
+				</Flex>
 
-				<Button>Select Package</Button>
-				<Text fontSize='24px'>
-					Templates serve as guides to best represent the approximate
-					price of a future project
-				</Text>
-				<Text color='#a2903e' fontSize='16px'>
-					Prices may vary between similar projects
-				</Text>
+				<ArrowDown />
 			</Flex>
-		</>
+			<Flex w='full' minH='100vh' flexDirection='column' mx='9.375rem'>
+				<WrapperWithSVG imgSide='right' img={<ThreeDevices />}>
+					<ContentCard
+						title={services[0].title}
+						text={services[0].text}
+					/>
+					<ContentCard
+						title={services[1].title}
+						text={services[1].text}
+					/>
+				</WrapperWithSVG>
+
+				<WrapperWithSVG
+					imgSide='left'
+					img={<PersonTouchingCellphone />}
+				>
+					<ContentCard
+						title={services[2].title}
+						text={services[2].text}
+					/>
+					<ContentCard
+						title={services[3].title}
+						text={services[3].text}
+					/>
+				</WrapperWithSVG>
+			</Flex>
+			<Flex
+				bg='linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgba(37, 37, 37, 0.3) 10.94%, rgba(43, 43, 43, 0.55) 25%, rgba(48, 48, 48, 0.8) 45.83%)'
+				w='full'
+				minH='100vh'
+				mt='10rem'
+				alignItems='center'
+				justifyContent='center'
+				flexDirection='column'
+			>
+				<Packages />
+			</Flex>
+		</Box>
 	);
 }
 

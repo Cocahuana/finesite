@@ -1,0 +1,28 @@
+import { Flex } from "@chakra-ui/react";
+function WrapperWithSVG(props) {
+	const img = props.imgSide === "left" ? "left" : "right";
+	const content =
+		img === "left" ? (
+			<Flex w='100%'>
+				<Flex minW='40%' alignItems='center' justifyContent='center'>
+					{props.img}
+				</Flex>
+				<Flex minW='60%' flexDirection='column'>
+					{props.children}
+				</Flex>
+			</Flex>
+		) : (
+			<Flex w='100%'>
+				<Flex minW='45%' flexDirection='column'>
+					{props.children}
+				</Flex>
+				<Flex minW='55%' alignItems='center' justifyContent='center'>
+					{props.img}
+				</Flex>
+			</Flex>
+		);
+
+	return <>{content}</>;
+}
+
+export default WrapperWithSVG;
