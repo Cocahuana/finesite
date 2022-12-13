@@ -1,6 +1,6 @@
 // import goldenLogoNoText from "../../assets/images/LogoGoldenNoText.svg";
 import Button from "../../components/ui/Button/Button";
-import { Flex, Heading, Box } from "@chakra-ui/react";
+import { Flex, Heading, Box, Text } from "@chakra-ui/react";
 import ArrowDown from "../../components/ui/SVG/ArrowDown";
 import PersonWithLaptop from "../../components/ui/SVG/PersonWithLaptop";
 import PersonTouchingCellphone from "../../components/ui/SVG/PersonTouchingCellphone";
@@ -44,15 +44,16 @@ function LandingPage() {
 								fontSize='7.5rem'
 								my='1rem'
 								color={customTheme.text.accent}
+								fontWeight='400'
 							>
 								Finesite
 							</Heading>
-							<Heading as='h2' fontSize='3rem' my='1rem'>
+							<Text fontSize='3rem' my='1rem'>
 								Branding & Design Agency
-							</Heading>
-							<Heading as='h3' fontSize='2rem' my='1rem'>
+							</Text>
+							<Text fontSize='2rem' my='1rem'>
 								Create. Design. Inspire
-							</Heading>
+							</Text>
 						</Flex>
 						<Button w='auto'>See Our Work</Button>
 					</Flex>

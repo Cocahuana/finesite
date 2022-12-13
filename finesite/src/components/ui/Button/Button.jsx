@@ -26,7 +26,7 @@ CustomButtom.defaultProps = {
 	bg: customTheme.bg.accent,
 	bgHover: customTheme.bg.complementary,
 	color: customTheme.text.black,
-	fontFamily: customTheme.ff.base,
+	fontFamily: customTheme.ff.heading,
 	fontSize: "1.5rem",
 	w: "auto",
 	h: "4.3125rem",

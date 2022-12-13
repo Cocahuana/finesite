@@ -1,14 +1,14 @@
 import React from "react";
 import SVGLogo from "../../../components/ui/SVG/SVGLogo";
-import { Text } from "@chakra-ui/react";
+import { Text, Heading } from "@chakra-ui/react";
 import Button from "../../../components/ui/Button/Button";
 function Packages() {
 	return (
 		<>
 			<SVGLogo />
-			<Text fontSize='4rem' mb='1.2rem'>
+			<Heading as='h2' fontSize='4rem' mb='1.2rem'>
 				Don’t know how much it’ll cost?
-			</Text>
+			</Heading>
 			<Text fontSize='2rem' w='37rem' textAlign='center'>
 				See a list of templates that will guide you through our usual
 				pricing.

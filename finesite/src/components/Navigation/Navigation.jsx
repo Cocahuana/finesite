@@ -2,8 +2,11 @@ import goldenLogoNoText from "../../assets/images/LogoGoldenNoText.svg";
 import { Flex, Text, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import navData from "./navData.json";
+import { customTheme } from "../../assets/customTheme";
+import SVGLogo from "../ui/SVG/SVGLogo";
 function Navigation() {
 	const { navLinks } = navData;
+	const { ff } = customTheme;
 	return (
 		<Flex
 			w='full'
@@ -19,16 +22,15 @@ function Navigation() {
 				>
 					{i === 2 ? (
 						<Link to={option.link}>
-							<Image
-								w='7rem'
-								h='4.2rem'
-								src={goldenLogoNoText}
-								alt='Main logo'
-							/>
+							<SVGLogo />
 						</Link>
 					) : (
 						<Link to={option.link}>
-							<Text fontSize='2rem' color='white'>
+							<Text
+								fontSize='2rem'
+								color='white'
+								fontFamily={ff.heading}
+							>
 								{option.text}
 							</Text>
 						</Link>
