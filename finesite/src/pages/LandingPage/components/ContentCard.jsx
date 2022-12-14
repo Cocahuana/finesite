@@ -4,7 +4,7 @@ function ContentCard(props) {
 	const { ff } = customTheme;
 	return (
 		<Flex flexDirection='column' justifyContent='center' alignItems='left'>
-			<Heading as='h2' fontSize='2.5rem' color='#F7DB5F'>
+			<Heading as='h2' fontSize='2.5rem' color='#F7DB5F' mb='0px'>
 				{props.title}
 			</Heading>
 			<Text

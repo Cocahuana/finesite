@@ -9,6 +9,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import Clients from "./pages/Clients/Clients";
 import Contact from "./pages/Contact/Contact";
 import navData from "./components/Navigation/navData.json";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 function App() {
 	const { navLinks } = navData;
 	const navComponents = [

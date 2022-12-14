@@ -29,11 +29,9 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-repeat: no-repeat;
-  background-size: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/images/background-photo.jpg) !important;
-
   
+
 }
 ::-webkit-scrollbar {
   width: 0.8rem;
@@ -61,4 +59,24 @@ code {
 }
 a{
   text-decoration: none;
+}
+
+#bg-img {
+  position: relative;
+  overflow: hidden;
+  transform: rotate(0deg);
+}
+
+#bg-img::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  /* background: url(background.png) 0 0 repeat; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(-90deg);
 }
