@@ -10,6 +10,7 @@ import WrapperWithSVG from "./components/WrapperWithSVG";
 import ContentCard from "./components/ContentCard";
 import contentData from "./components/data/content.json";
 import Packages from "./components/Packages";
+import Footer from "../../components/Footer/Footer";
 // import { Link } from "react-router-dom";
 function LandingPage() {
 	const { services } = contentData;
@@ -98,9 +99,11 @@ function LandingPage() {
 				alignItems='center'
 				justifyContent='center'
 				flexDirection='column'
+				fontWeight={700}
 			>
 				<Packages />
 			</Flex>
+			<Footer />
 		</Box>
 	);
 }
