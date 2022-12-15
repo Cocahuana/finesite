@@ -9,7 +9,7 @@ function PersonWithLaptop(props) {
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
-			<g clip-path='url(#clip0_131_68)'>
+			<g clipPath='url(#clip0_131_68)'>
 				<path
 					d='M105.279 12.7452V328.561C105.282 332.585 106.876 336.444 109.71 339.29C112.544 342.136 116.387 343.736 120.395 343.739H586.477C590.485 343.736 594.328 342.136 597.162 339.29C599.996 336.444 601.59 332.585 601.593 328.561V12.7452C601.583 8.72412 599.987 4.87068 597.154 2.0289C594.321 -0.812881 590.481 -2.4114 586.477 -2.4165H120.395C116.39 -2.41138 112.551 -0.812877 109.718 2.0289C106.885 4.87068 105.288 8.72413 105.279 12.7452Z'
 					fill='#585858'
@@ -231,9 +231,9 @@ function PersonWithLaptop(props) {
 					width='96.6763'
 					height='186.008'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -271,9 +271,9 @@ function PersonWithLaptop(props) {
 					width='101.534'
 					height='156.81'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -311,9 +311,9 @@ function PersonWithLaptop(props) {
 					width='59.9883'
 					height='103.404'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'

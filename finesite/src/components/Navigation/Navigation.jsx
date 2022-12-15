@@ -16,6 +16,7 @@ function Navigation() {
 		>
 			{navLinks?.map((option, i) => (
 				<Flex
+					key={i}
 					textAlign='center'
 					alignItems='center'
 					justifyContent='center'

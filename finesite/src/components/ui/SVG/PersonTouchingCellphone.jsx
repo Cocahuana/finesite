@@ -12,7 +12,7 @@ function PersonTouchingCellphone(props) {
 			<path
 				d='M22.1796 0C16.2993 0.00668944 10.6617 2.34454 6.50365 6.50068C2.34561 10.6568 0.00668515 16.2918 0 22.1695V426.831C0.00678256 432.708 2.34575 438.343 6.50378 442.499C10.6618 446.655 16.2994 448.993 22.1796 449H243.934C249.814 448.993 255.452 446.656 259.61 442.499C263.768 438.343 266.107 432.708 266.114 426.831V22.1695C266.107 16.2918 263.768 10.6568 259.61 6.50067C255.452 2.34454 249.814 0.00668758 243.934 0H22.1796Z'
 				fill='white'
-				fill-opacity='0.8'
+				fillOpacity='0.8'
 			/>
 			<path
 				d='M29.4288 12.5957C24.9675 12.6008 20.6903 14.3744 17.5357 17.5276C14.3811 20.6808 12.6066 24.9559 12.6016 29.4152V419.584C12.6066 424.044 14.381 428.319 17.5356 431.472C20.6903 434.625 24.9674 436.399 29.4288 436.404H236.685C241.146 436.399 245.424 434.625 248.578 431.472C251.733 428.319 253.507 424.044 253.512 419.584V29.4152C253.507 24.9559 251.733 20.6808 248.578 17.5276C245.424 14.3745 241.146 12.6008 236.685 12.5957H29.4288Z'
@@ -197,7 +197,7 @@ function PersonTouchingCellphone(props) {
 				<path
 					d='M398 209.361H413M401.376 206V209.361M398 212.75H413M409.488 216V212.75M398 206H413V216H398V206Z'
 					stroke='#F7DC5F'
-					stroke-miterlimit='10'
+					strokeMiterlimit='10'
 				/>
 				<path
 					d='M450.288 222.732L416.394 232.34V173.179L420.893 174.634C424.823 175.905 428.395 178.092 431.312 181.016C434.229 183.939 436.409 187.514 437.671 191.446L450.288 222.732Z'
@@ -213,9 +213,9 @@ function PersonTouchingCellphone(props) {
 					width='80.6807'
 					height='140.56'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -253,9 +253,9 @@ function PersonTouchingCellphone(props) {
 					width='83.6934'
 					height='25.3467'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'
@@ -293,9 +293,9 @@ function PersonTouchingCellphone(props) {
 					width='110.741'
 					height='139.703'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feBlend
 						mode='normal'
 						in='SourceGraphic'

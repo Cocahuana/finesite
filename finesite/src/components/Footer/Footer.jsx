@@ -29,61 +29,66 @@ function Footer() {
 		"Text Text Text",
 		"Text Text Text Text Te ",
 	];
+
 	return (
-		<Flex
-			w='full'
-			bg='black'
-			h='60vh'
-			alignItems='flex-start'
-			justifyContent='space-evenly'
-			color={customTheme.text.complementary2}
-			fontWeight={700}
-			fontSize='1.5rem'
-			fontFamily={customTheme.ff.heading}
-			pt='4.25rem'
-		>
+		<>
 			<Flex
+				w='full'
+				bg={["red", "green", "blue"]}
+				h='60vh'
 				alignItems='flex-start'
-				justifyContent='center'
-				flexDirection='column'
+				justifyContent='space-evenly'
+				color={customTheme.text.complementary2}
+				fontWeight={700}
+				fontSize={{ base: "1rem", md: "1.5rem" }}
+				fontFamily={customTheme.ff.heading}
+				pt='4.25rem'
 			>
-				{info1.map((data) => (
-					<Box my='1rem'>{data}</Box>
-				))}
-				<Box mt='6rem' ml='-1rem'>
-					<SVGLogo type='white' />
-				</Box>
-			</Flex>
-			<Flex
-				alignItems='flex-start'
-				justifyContent='center'
-				flexDirection='column'
-			>
-				{info2.map((data) => (
-					<Box my='1rem'>{data}</Box>
-				))}
-			</Flex>
-			<Flex
-				alignItems='flex-start'
-				justifyContent='center'
-				flexDirection='column'
-			>
-				{info3.map((data) => (
-					<Box my='1rem'>{data}</Box>
-				))}
-			</Flex>
-			<Flex h='77%' alignItems='flex-end'>
+				<Flex
+					alignItems='flex-start'
+					justifyContent='center'
+					flexDirection='column'
+					bg={{ base: "red", lg: "blue" }}
+				>
+					{info1.map((data, i) => (
+						<Box my='1rem'>{data}</Box>
+					))}
+					<Box mt='6rem' ml='-1rem'>
+						<SVGLogo type='white' />
+					</Box>
+				</Flex>
 				<Flex
 					alignItems='flex-start'
 					justifyContent='center'
 					flexDirection='column'
 				>
-					{info4.map((data) => (
+					{info2.map((data) => (
 						<Box my='1rem'>{data}</Box>
 					))}
 				</Flex>
-			</Flex>
-		</Flex>
+
+				<Flex
+					alignItems='flex-start'
+					justifyContent='center'
+					flexDirection='column'
+				>
+					{info3.map((data) => (
+						<Box my='1rem'>{data}</Box>
+					))}
+				</Flex>
+				<Flex h='77%' alignItems='flex-end'>
+					<Flex
+						alignItems='flex-start'
+						justifyContent='center'
+						flexDirection='column'
+					>
+						{info4.map((data) => (
+							<Box my='1rem'>{data}</Box>
+						))}
+					</Flex>
+				</Flex>
+			</Flex>{" "}
+		</>
 	);
 }
 

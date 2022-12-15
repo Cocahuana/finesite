@@ -63,6 +63,7 @@ function App() {
 					<Route element={<AnimationLayout />}>
 						{navLinks.map((option, component) => (
 							<Route
+								key={component}
 								path={option.link}
 								element={navComponents[component]}
 							/>
