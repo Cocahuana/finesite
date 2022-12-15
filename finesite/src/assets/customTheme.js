@@ -29,6 +29,7 @@ export const customTheme = {
 		white: colors.white,
 		black: colors.black,
 		accent: colors.lightYellow,
+		complementary2: colors.complementary2,
 	},
 	heading: colors.lightYellow,
 	ff: {
