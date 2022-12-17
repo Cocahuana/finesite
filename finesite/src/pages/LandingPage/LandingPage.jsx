@@ -114,6 +114,7 @@ function LandingPage() {
 				justifyContent='center'
 				flexDirection='column'
 				fontWeight={700}
+				px={{ base: "2rem", xl: "0" }}
 			>
 				<Packages />
 			</Flex>
