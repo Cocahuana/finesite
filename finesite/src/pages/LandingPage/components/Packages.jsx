@@ -6,7 +6,7 @@ function Packages() {
 	return (
 		<>
 			<SVGLogo />
-			<Heading as='h2' fontSize='4rem' mb='1.2rem'>
+			<Heading as='h2' fontSize='4rem' mb='1.2rem' color='white'>
 				Don’t know how much it’ll cost?
 			</Heading>
 			<Text fontSize='2rem' w='37rem' textAlign='center'>

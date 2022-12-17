@@ -34,7 +34,7 @@ function Footer() {
 		<>
 			<Flex
 				w='full'
-				bg={["red", "green", "blue"]}
+				bg='black'
 				h='60vh'
 				alignItems='flex-start'
 				justifyContent='space-evenly'
@@ -43,6 +43,7 @@ function Footer() {
 				fontSize={{ base: "1rem", md: "1.5rem" }}
 				fontFamily={customTheme.ff.heading}
 				pt='4.25rem'
+				px={{ base: "2rem", lg: "0" }}
 			>
 				<Flex
 					alignItems='flex-start'

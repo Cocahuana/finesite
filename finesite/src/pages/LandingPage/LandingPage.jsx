@@ -10,7 +10,6 @@ import WrapperWithSVG from "./components/WrapperWithSVG";
 import ContentCard from "./components/ContentCard";
 import contentData from "./components/data/content.json";
 import Packages from "./components/Packages";
-import Footer from "../../components/Footer/Footer";
 // import { Link } from "react-router-dom";
 function LandingPage() {
 	const { services } = contentData;
@@ -44,7 +43,6 @@ function LandingPage() {
 								as='h1'
 								fontSize='7.5rem'
 								my='1rem'
-								color={customTheme.text.accent}
 								fontWeight='400'
 							>
 								Finesite
@@ -103,7 +101,6 @@ function LandingPage() {
 			>
 				<Packages />
 			</Flex>
-			<Footer />
 		</Box>
 	);
 }

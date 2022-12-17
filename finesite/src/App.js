@@ -1,7 +1,5 @@
 import { Routes, Route, Outlet, useLocation } from "react-router-dom";
-import GlobalStyle from "./assets/globalStyles";
-import { ThemeProvider } from "styled-components";
-import { customTheme } from "./assets/customTheme";
+
 import Navigation from "./components/Navigation/Navigation";
 import About from "./pages/About/About";
 import Blogs from "./pages/Blogs/Blogs";
@@ -10,6 +8,8 @@ import Clients from "./pages/Clients/Clients";
 import Contact from "./pages/Contact/Contact";
 import navData from "./components/Navigation/navData.json";
 import { motion } from "framer-motion";
+import Footer from "./components/Footer/Footer";
+
 const PageLayout = ({ children }) => children;
 
 const pageVariants = {
@@ -55,23 +55,21 @@ function App() {
 		<Contact />,
 	];
 	return (
-		<ThemeProvider theme={customTheme}>
-			<>
-				<GlobalStyle />
-				<Navigation />
-				<Routes>
-					<Route element={<AnimationLayout />}>
-						{navLinks.map((option, component) => (
-							<Route
-								key={component}
-								path={option.link}
-								element={navComponents[component]}
-							/>
-						))}
-					</Route>
-				</Routes>
-			</>
-		</ThemeProvider>
+		<>
+			<Navigation />
+			<Routes>
+				<Route element={<AnimationLayout />}>
+					{navLinks.map((option, component) => (
+						<Route
+							key={component}
+							path={option.link}
+							element={navComponents[component]}
+						/>
+					))}
+				</Route>
+			</Routes>
+			<Footer />
+		</>
 	);
 }
 
