@@ -77,7 +77,7 @@ function Footer() {
 						<Box my='1rem'>{data}</Box>
 					))}
 				</Flex>
-				<Flex h='100%' bg='blue'>
+				<Flex h='100%'>
 					<Flex
 						alignItems='flex-start'
 						justifyContent='center'

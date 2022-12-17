@@ -70,8 +70,9 @@ function LandingPage() {
 						<PersonWithLaptop />
 					</Flex>
 				</Flex>
-
-				<ArrowDown />
+				<Box>
+					<ArrowDown />
+				</Box>
 			</Flex>
 
 			<Flex
