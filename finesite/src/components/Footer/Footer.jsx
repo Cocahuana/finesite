@@ -35,7 +35,7 @@ function Footer() {
 			<Flex
 				w='full'
 				bg='black'
-				h='60vh'
+				minH='60vh'
 				alignItems='flex-start'
 				justifyContent='space-evenly'
 				color={customTheme.text.complementary2}
@@ -44,12 +44,12 @@ function Footer() {
 				fontFamily={customTheme.ff.heading}
 				pt='4.25rem'
 				px={{ base: "2rem", lg: "0" }}
+				pb='6.5625rem'
 			>
 				<Flex
 					alignItems='flex-start'
 					justifyContent='center'
 					flexDirection='column'
-					bg={{ base: "red", lg: "blue" }}
 				>
 					{info1.map((data, i) => (
 						<Box my='1rem'>{data}</Box>
@@ -77,7 +77,7 @@ function Footer() {
 						<Box my='1rem'>{data}</Box>
 					))}
 				</Flex>
-				<Flex h='77%' alignItems='flex-end'>
+				<Flex h='100%' bg='blue'>
 					<Flex
 						alignItems='flex-start'
 						justifyContent='center'
@@ -88,7 +88,7 @@ function Footer() {
 						))}
 					</Flex>
 				</Flex>
-			</Flex>{" "}
+			</Flex>
 		</>
 	);
 }
