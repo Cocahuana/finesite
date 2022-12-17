@@ -16,8 +16,8 @@ function LandingPage() {
 		<Box overflow='hidden'>
 			<Flex
 				w='full'
-				minH='80vh'
-				maxH='80vh'
+				minH={{ base: "85vh", xl: "80vh" }}
+				maxH={{ base: "85vh", xl: "80vh" }}
 				flexDirection={"column"}
 				justifyContent='space-between'
 				alignItems='center'
@@ -73,7 +73,13 @@ function LandingPage() {
 
 				<ArrowDown />
 			</Flex>
-			<Flex w='full' minH='100vh' flexDirection='column' mx='9.375rem'>
+
+			<Flex
+				w='full'
+				minH='100vh'
+				flexDirection='column'
+				px={{ base: "2rem", xl: "9.375rem" }}
+			>
 				<WrapperWithSVG imgSide='right' img={<ThreeDevices />}>
 					<ContentCard
 						title={services[0].title}
