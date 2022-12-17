@@ -5,7 +5,6 @@ import ArrowDown from "../../components/ui/SVG/ArrowDown";
 import PersonWithLaptop from "../../components/ui/SVG/PersonWithLaptop";
 import PersonTouchingCellphone from "../../components/ui/SVG/PersonTouchingCellphone";
 import ThreeDevices from "../../components/ui/SVG/ThreeDevices";
-import { customTheme } from "../../assets/customTheme";
 import WrapperWithSVG from "./components/WrapperWithSVG";
 import ContentCard from "./components/ContentCard";
 import contentData from "./components/data/content.json";
@@ -14,7 +13,7 @@ import Packages from "./components/Packages";
 function LandingPage() {
 	const { services } = contentData;
 	return (
-		<Box>
+		<Box overflow='hidden'>
 			<Flex
 				w='full'
 				minH='80vh'
@@ -23,40 +22,51 @@ function LandingPage() {
 				justifyContent='space-between'
 				alignItems='center'
 				py='2%'
-				mx='9.375rem'
+				px={{ base: "2rem", xl: "9.375rem" }}
 			>
 				<Flex w='100%' minH='70vh'>
 					<Flex
-						w='50%'
+						w={{ base: "100%", xl: "50%" }}
 						flexDirection={"column"}
-						alignItems='flex-start'
-						justifyContent='flex-end'
+						alignItems={{ base: "center", xl: "flex-start" }}
+						justifyContent={{
+							base: "space-evenly",
+							xl: "flex-end",
+						}}
 					>
 						<Flex
 							flexDirection={"column"}
-							alignItems='flex-start'
+							alignItems={{
+								base: "center",
+								xl: "flex-start",
+							}}
 							justifyContent='space-evenly'
 							letterSpacing='0.055rem'
 							mb='2rem'
+							h={{ base: "80%", xl: "auto" }}
 						>
 							<Heading
 								as='h1'
 								fontSize='7.5rem'
-								my='1rem'
+								my={{ xl: "1rem" }}
 								fontWeight='400'
 							>
 								Finesite
 							</Heading>
-							<Text fontSize='3rem' my='1rem'>
+							<Text fontSize='3rem' my={{ xl: "1rem" }}>
 								Branding & Design Agency
 							</Text>
-							<Text fontSize='2rem' my='1rem'>
+							<Text fontSize='2rem' my={{ xl: "1rem" }}>
 								Create. Design. Inspire
 							</Text>
 						</Flex>
 						<Button w='auto'>See Our Work</Button>
 					</Flex>
-					<Flex w='50%' py='2%'>
+					<Flex
+						display={{ base: "none", xl: "flex" }}
+						w='50%'
+						py='2%'
+					>
 						<PersonWithLaptop />
 					</Flex>
 				</Flex>
