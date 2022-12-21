@@ -6,6 +6,8 @@ import PersonTouchingCellphone from "./ui/SVG/PersonTouchingCellphone";
 import PersonWithLaptop from "./ui/SVG/PersonWithLaptop";
 import SVGLogo from "./ui/SVG/SVGLogo";
 import ThreeDevices from "./ui/SVG/ThreeDevices";
+import CustomCards from "./CustomCards/CustomCards";
+import CustomCard from "./CustomCard/CustomCard";
 export {
 	Footer,
 	Navigation,
@@ -15,4 +17,6 @@ export {
 	PersonWithLaptop,
 	SVGLogo,
 	ThreeDevices,
+	CustomCard,
+	CustomCards,
 };
