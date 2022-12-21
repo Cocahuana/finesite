@@ -1,15 +1,15 @@
-// import goldenLogoNoText from "../../assets/images/LogoGoldenNoText.svg";
-import Button from "../../components/ui/Button/Button";
 import { Flex, Heading, Box, Text } from "@chakra-ui/react";
-import ArrowDown from "../../components/ui/SVG/ArrowDown";
-import PersonWithLaptop from "../../components/ui/SVG/PersonWithLaptop";
-import PersonTouchingCellphone from "../../components/ui/SVG/PersonTouchingCellphone";
-import ThreeDevices from "../../components/ui/SVG/ThreeDevices";
 import WrapperWithSVG from "./components/WrapperWithSVG";
 import ContentCard from "./components/ContentCard";
 import contentData from "./components/data/content.json";
 import Packages from "./components/Packages";
-// import { Link } from "react-router-dom";
+import {
+	Button,
+	ArrowDown,
+	PersonWithLaptop,
+	PersonTouchingCellphone,
+	ThreeDevices,
+} from "../../components";
 function LandingPage() {
 	const { services } = contentData;
 	return (
