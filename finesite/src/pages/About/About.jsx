@@ -1,16 +1,16 @@
-import { Flex, Box, Heading, Center } from "@chakra-ui/react";
-import { CustomCards, CustomCard, ArrowDown } from "../../components";
+import { Flex, Box, Heading, Center, Text, Image } from "@chakra-ui/react";
+import { CustomCards, CustomCard, ArrowDown, Button } from "../../components";
 import {
 	IMG_UX,
 	IMG_UI,
 	IMGQAControl,
-	IMGHappyn,
 	IMGFrontend,
+	IMGHappyn,
 	IMGCompany5,
 	IMGCompany4,
 	IMGCompany3,
-	IMGbackend,
 	IMGAdConstructura,
+	IMGbackend,
 	IMGMobile,
 	IMGLaptop,
 	IMGObelisco,
@@ -27,6 +27,13 @@ function About() {
 		IMGFrontend,
 		IMGbackend,
 		IMGQAControl,
+	];
+	const arrCompanies = [
+		IMGHappyn,
+		IMGAdConstructura,
+		IMGCompany3,
+		IMGCompany4,
+		IMGCompany5,
 	];
 	return (
 		<Box px='12.5rem'>
@@ -127,8 +134,23 @@ function About() {
 					</Flex>
 				</LittleWrapper>
 			</Flex>
-			<Flex bg='violet' w='full' h='100vh'>
-				About page
+			<Flex
+				flexDirection='column'
+				w='full'
+				minH='30vh'
+				alignItems='center'
+				justifyContent='space-between'
+				my='12.5rem'
+			>
+				<Text fontSize='1.5rem' color={customTheme.text.complementary2}>
+					Some of our Clients:
+				</Text>
+				<Flex w='100%' justifyContent='space-between'>
+					{arrCompanies.map((company) => (
+						<Image pl='3.5%' src={company} alt={company} />
+					))}
+				</Flex>
+				<Button>See Our Work</Button>
 			</Flex>
 		</Box>
 	);
