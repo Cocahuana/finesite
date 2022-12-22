@@ -1,12 +1,33 @@
 import { Flex, Box, Heading, Center } from "@chakra-ui/react";
 import { CustomCards, CustomCard, ArrowDown } from "../../components";
-import IMGObelisco from "./assets/obelisco.svg";
-import IMGLaptop from "./assets/Image 2.svg";
-import IMGMobile from "./assets/Image 3.svg";
+import {
+	IMG_UX,
+	IMG_UI,
+	IMGQAControl,
+	IMGHappyn,
+	IMGFrontend,
+	IMGCompany5,
+	IMGCompany4,
+	IMGCompany3,
+	IMGbackend,
+	IMGAdConstructura,
+	IMGMobile,
+	IMGLaptop,
+	IMGObelisco,
+} from "./assets";
 import data from "./data.json";
 import { customTheme } from "../../assets/customTheme";
+import LittleWrapper from "./LittleWrapper";
+import LittleCard from "./LittleCard";
 function About() {
-	const { cards } = data;
+	const { cards, processes } = data;
+	const proccessesImgArr = [
+		IMG_UX,
+		IMG_UI,
+		IMGFrontend,
+		IMGbackend,
+		IMGQAControl,
+	];
 	return (
 		<Box px='12.5rem'>
 			<Flex w='full' minH='85vh'>
@@ -57,8 +78,54 @@ function About() {
 					/>
 				</CustomCards>
 			</Flex>
-			<Flex bg='yellow' w='full' h='100vh'>
-				About page
+			<Flex w='full' minH='100vh' flexDirection='column'>
+				<Center my='6.25rem'>
+					<Heading
+						as='h2'
+						fontWeight='700'
+						fontSize='4rem'
+						lineHeight='4.9375rem'
+					>
+						The Proccess
+					</Heading>
+				</Center>
+				<LittleWrapper>
+					<Flex justifyContent='space-between'>
+						<LittleCard
+							title={processes[0].title}
+							text={processes[0].text}
+							img={proccessesImgArr[0]}
+						/>
+						<LittleCard
+							title={processes[1].title}
+							text={processes[1].text}
+							img={proccessesImgArr[1]}
+						/>
+					</Flex>
+					<Flex
+						justifyContent='space-between'
+						borderBottom='5px solid rgba(255, 255, 255, 0.59)'
+						borderTop='5px solid rgba(255, 255, 255, 0.59)'
+					>
+						<LittleCard
+							title={processes[2].title}
+							text={processes[2].text}
+							img={proccessesImgArr[2]}
+						/>
+						<LittleCard
+							title={processes[3].title}
+							text={processes[3].text}
+							img={proccessesImgArr[3]}
+						/>
+					</Flex>
+					<Flex justifyContent='space-between'>
+						<LittleCard
+							title={processes[4].title}
+							text={processes[4].text}
+							img={proccessesImgArr[4]}
+						/>
+					</Flex>
+				</LittleWrapper>
 			</Flex>
 			<Flex bg='violet' w='full' h='100vh'>
 				About page

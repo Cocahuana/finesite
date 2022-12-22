@@ -12,5 +12,27 @@
 			"title": "What we promote",
 			"text": "We think that simple and intelligent work combined with ambition and determination makes the perfect formula for success. And we apply that day to day to ensure we surpass our clients expectations."
 		}
+	],
+	"processes": [
+		{
+			"title": "UX Design",
+			"text": "Research, User Flow, Wireframes, Prototypes and testing."
+		},
+		{
+			"title": "UI Design",
+			"text": "More detailed and interactive prototypes, refinements."
+		},
+		{
+			"title": "Front-End Development",
+			"text": "Structure, style and interactivity. Fully visual website or application."
+		},
+		{
+			"title": "Back-End Development",
+			"text": "Data management, system creation, finished website!"
+		},
+		{
+			"title": "Quality Control",
+			"text": "Quality standards, objectives and plans. Monitoring and testing."
+		}
 	]
 }
