@@ -1,10 +1,13 @@
-import { Flex } from "@chakra-ui/react";
-
+import { Flex, Box } from "@chakra-ui/react";
+import Hero from "../../components/Hero/Hero";
 function Blogs() {
 	return (
-		<Flex bg='green' w='full' h='100vh'>
-			Textovich
-		</Flex>
+		<Box>
+			<Hero title='Titulo' subtitle='Subtitulo' />
+			<Flex bg='green' w='full' h='100vh'>
+				Textovich
+			</Flex>
+		</Box>
 	);
 }
 

@@ -19,6 +19,7 @@ import data from "./data.json";
 import { customTheme } from "../../assets/customTheme";
 import LittleWrapper from "./LittleWrapper";
 import LittleCard from "./LittleCard";
+import Hero from "../../components/Hero/Hero";
 function About() {
 	const { cards, processes } = data;
 	const proccessesImgArr = [
@@ -37,34 +38,10 @@ function About() {
 	];
 	return (
 		<Box px='12.5rem'>
-			<Flex w='full' minH='85vh'>
-				<Flex
-					flexDirection='column'
-					w='100%'
-					alignItems='center'
-					justifyContent='center'
-				>
-					<Flex
-						flexDirection='column'
-						h='90%'
-						alignItems='center'
-						justifyContent='center'
-					>
-						<Heading as='h5' fontSize='5.75rem' my='0.78125rem'>
-							Websites that work.
-						</Heading>
-						<Heading
-							my='0.78125rem'
-							as='h2'
-							fontSize='3rem'
-							color={customTheme.text.white}
-						>
-							What’s behind them?
-						</Heading>
-					</Flex>
-					<ArrowDown />
-				</Flex>
-			</Flex>
+			<Hero
+				title={"Websites that work."}
+				subtitle={"What’s behind them?"}
+			/>
 			<Flex w='full' minH='100vh'>
 				<CustomCards>
 					<CustomCard
