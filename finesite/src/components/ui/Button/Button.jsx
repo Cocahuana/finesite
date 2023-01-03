@@ -28,7 +28,7 @@ CustomButtom.defaultProps = {
 	color: customTheme.text.black,
 	fontFamily: customTheme.ff.heading,
 	fontSize: "1.5rem",
-	w: "auto",
+	w: "225px",
 	h: "4.3125rem",
 	transition: "all 0.5s ease",
 	lineHeight: "30px",

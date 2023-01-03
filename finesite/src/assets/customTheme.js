@@ -6,6 +6,7 @@ const colors = {
 	gray: "#ccc",
 	complementary1: "#4d451e",
 	complementary2: "#a2903e",
+	alphaComplementary2: "rgba(162, 144, 62, 0.53)",
 };
 
 const fonts = {
@@ -31,6 +32,7 @@ export const customTheme = {
 		black: colors.black,
 		accent: colors.lightYellow,
 		complementary2: colors.complementary2,
+		alphaComplementary2: colors.alphaComplementary2,
 	},
 	heading: colors.lightYellow,
 	ff: {

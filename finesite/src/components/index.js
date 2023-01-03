@@ -8,6 +8,8 @@ import SVGLogo from "./ui/SVG/SVGLogo";
 import ThreeDevices from "./ui/SVG/ThreeDevices";
 import CustomCards from "./CustomCards/CustomCards";
 import CustomCard from "./CustomCard/CustomCard";
+import Form from "./Form/Form";
+import FormInput from "./Form/FormInput/FormInput";
 export {
 	Footer,
 	Navigation,
@@ -19,4 +21,6 @@ export {
 	ThreeDevices,
 	CustomCard,
 	CustomCards,
+	Form,
+	FormInput,
 };
