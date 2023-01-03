@@ -45,6 +45,7 @@ function Footer() {
 				pt='4.25rem'
 				px={{ base: "2rem", lg: "0" }}
 				pb='6.5625rem'
+				borderTop={`2px solid ${customTheme.text.complementary2}`}
 			>
 				<Flex
 					alignItems='flex-start'

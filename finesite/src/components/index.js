@@ -10,6 +10,8 @@ import CustomCards from "./CustomCards/CustomCards";
 import CustomCard from "./CustomCard/CustomCard";
 import Form from "./Form/Form";
 import FormInput from "./Form/FormInput/FormInput";
+import TextCard from "./TextCard/TextCard";
+import Hero from "./Hero/Hero";
 export {
 	Footer,
 	Navigation,
@@ -23,4 +25,6 @@ export {
 	CustomCards,
 	Form,
 	FormInput,
+	TextCard,
+	Hero,
 };
