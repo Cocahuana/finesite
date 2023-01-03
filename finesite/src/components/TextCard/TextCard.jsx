@@ -3,8 +3,8 @@ import styled from "styled-components";
 const Container = styled.div`
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	width: 33.125rem;
+	flex-direction: column;
+	width: 31rem;
 `;
 function TextCard(props) {
 	const { children } = props;

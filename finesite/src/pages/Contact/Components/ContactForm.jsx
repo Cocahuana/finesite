@@ -47,7 +47,7 @@ function ContactForm(props) {
 					console.log("Result: ", result);
 					setStatus(true);
 					setMessage(
-						`Le agradecemos su solicitud ${form.fullName} ! Usted será respondido al mail: ${form.email} o a este numero de teléfono: ${form.phoneNumber}. Nos contactaremos con usted cuanto antes!`
+						`Le agradecemos su solicitud  ! Usted será respondido al mail:  o a este numero de teléfono: . Nos contactaremos con usted cuanto antes!`
 					);
 				},
 				(error) => {

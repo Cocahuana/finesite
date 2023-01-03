@@ -36,17 +36,17 @@ CustomButtom.defaultProps = {
 	px: "1.5rem",
 };
 function Button(props) {
-	const { children } = props;
+	const { children, onClick } = props;
 	return (
 		<>
 			<CustomButtom
 				as='a'
-				href='#'
 				w={props.w}
 				h={props.h}
 				px={props.px}
 				pl={props.pl}
 				pr={props.pr}
+				onClick={onClick}
 			>
 				{children}
 			</CustomButtom>

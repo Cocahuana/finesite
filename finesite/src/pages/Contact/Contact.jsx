@@ -22,15 +22,9 @@ const BackgroundLight = styled.div`
 	);
 `;
 
-const TextContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	width: 33.125rem;
-`;
-
 const Space = styled.div`
-	min-height: 20vh;
-	width: 100%;
+	min-height: ${(props) => (props.h ? props.h : "100%")};
+	width: ${(props) => props.w};
 `;
 
 const TextCardSection = styled.div`
@@ -38,14 +32,15 @@ const TextCardSection = styled.div`
 	width: 100%;
 	flex-direction: column;
 	justify-content: space-evenly;
+	align-items: center;
 	height: 50vh;
 `;
 
 const Row = styled.div`
 	display: flex;
-
-	justify-content: space-evenly;
-	// 1310px
+	justify-content: space-between;
+	width: 1310px;
+	margin-bottom: 50px;
 `;
 
 function Contact() {
@@ -77,7 +72,7 @@ function Contact() {
 				title='Contact us!'
 				subtitle='Questions, projects, applications, and more.'
 			/>
-			<Space />
+			<Space w='100%' h='20vh' />
 			<BackgroundLight>
 				<ContactSection>
 					<Image src={SVGWomenAtComputer} alt='svg women' />
@@ -88,22 +83,30 @@ function Contact() {
 				<TextCardSection>
 					<Row>
 						{textData.firstRow.map((card) => (
-							<TextContainer>
-								<Text fontSize='20px' fontWeight='700'>
+							<TextCard>
+								<Text
+									fontSize='20px'
+									fontWeight='700'
+									lineHeight='40px'
+								>
 									{card.boldText}
 								</Text>
-								<Text>{card.text}</Text>
-							</TextContainer>
+								<Text lineHeight='2rem'>{card.text}</Text>
+							</TextCard>
 						))}
 					</Row>
 					<Row>
 						{textData.secondRow.map((card) => (
-							<TextContainer>
-								<Text fontSize='20px' fontWeight='700'>
+							<TextCard>
+								<Text
+									fontSize='20px'
+									fontWeight='700'
+									lineHeight='40px'
+								>
 									{card.boldText}
 								</Text>
-								<Text>{card.text}</Text>
-							</TextContainer>
+								<Text lineHeight='2rem'>{card.text}</Text>
+							</TextCard>
 						))}
 					</Row>
 				</TextCardSection>
