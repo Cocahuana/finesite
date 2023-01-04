@@ -3,8 +3,9 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 import ArrowDown from "../ui/SVG/ArrowDown";
 import { customTheme } from "../../assets/customTheme";
 function Hero(props) {
+	const { title, subtitle, textAlign } = props;
 	return (
-		<Flex w='full' minH='85vh'>
+		<Flex w='100%' minH='85vh'>
 			<Flex
 				flexDirection='column'
 				w='100%'
@@ -18,15 +19,16 @@ function Hero(props) {
 					justifyContent='center'
 				>
 					<Heading as='h5' fontSize='5.75rem' my='0.78125rem'>
-						{props.title}
+						{title}
 					</Heading>
 					<Heading
 						my='0.78125rem'
 						as='h2'
 						fontSize='3rem'
 						color={customTheme.text.white}
+						textAlign={textAlign ? textAlign : "left"}
 					>
-						{props.subtitle}
+						{subtitle}
 					</Heading>
 				</Flex>
 				<ArrowDown />
