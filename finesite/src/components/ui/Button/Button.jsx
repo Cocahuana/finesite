@@ -5,7 +5,7 @@ const CustomButtom = styled.button`
 	color: ${(props) => props.color};
 	font-family: ${(props) => props.fontFamily};
 	font-size: ${(props) => props.fontSize};
-	width: ${(props) => props.w};
+	min-width: ${(props) => props.minW};
 	height: ${(props) => props.h};
 	text-decoration: none;
 	transition: ${(props) => props.transition};
@@ -19,6 +19,7 @@ const CustomButtom = styled.button`
 	}
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	text-transform: capitalize;
 `;
 
@@ -28,12 +29,11 @@ CustomButtom.defaultProps = {
 	color: customTheme.text.black,
 	fontFamily: customTheme.ff.heading,
 	fontSize: "1.5rem",
-	w: "225px",
+	minW: "225px",
 	h: "4.3125rem",
 	transition: "all 0.5s ease",
 	lineHeight: "30px",
 	fontWeight: "700",
-	px: "1.5rem",
 };
 function Button(props) {
 	const { children, onClick } = props;
@@ -41,7 +41,8 @@ function Button(props) {
 		<>
 			<CustomButtom
 				as='a'
-				w={props.w}
+				bg={props.bg}
+				minW={props.minW}
 				h={props.h}
 				px={props.px}
 				pl={props.pl}

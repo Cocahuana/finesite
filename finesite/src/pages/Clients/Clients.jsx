@@ -1,6 +1,10 @@
 import { Flex, Box, Image, Grid, GridItem, Text } from "@chakra-ui/react";
 import IMG_AdConstructora from "./assets/ad-constructora.png";
-import Hero from "../../components/Hero/Hero";
+import { Button, Hero } from "../../components";
+import { FlexCenter, FlexJustify } from "../../components/ui/Boxes/Boxes";
+import styled from "styled-components";
+import FlipCard from "./FlipCard";
+
 function Clients() {
 	const projects = [
 		{
@@ -31,7 +35,7 @@ function Clients() {
 	return (
 		<Box w='100%'>
 			<Flex w='100%' justifyContent='center'>
-				<Box w='884px'>
+				<Box w='60.25rem'>
 					<Hero
 						title='Our Work'
 						subtitle='Get detailed information about our most recent projects and case studies.'
@@ -53,10 +57,25 @@ function Clients() {
 							<Text fontSize='40px' mb='28px' textAlign='center'>
 								{project.name}
 							</Text>
-							<Image alt={project.name} src={project.img} />
+							<FlipCard>
+								<div>
+									<Image
+										alt={project.name}
+										src={project.img}
+									/>
+								</div>
+								<div>
+									<Text>Soy la parte de atrás</Text>{" "}
+								</div>
+							</FlipCard>
 						</GridItem>
 					))}
 				</Grid>
+			</Box>
+			<Box w='100%' my='10rem'>
+				<FlexCenter>
+					<Button>Contact Us</Button>
+				</FlexCenter>
 			</Box>
 		</Box>
 	);
