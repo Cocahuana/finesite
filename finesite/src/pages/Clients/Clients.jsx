@@ -1,8 +1,9 @@
 import { Flex, Box, Image, Grid, GridItem, Text } from "@chakra-ui/react";
 import IMG_AdConstructora from "./assets/ad-constructora.png";
+import cell from "./assets/cell.png";
+import coffee from "./assets/coffee.png";
 import { Button, Hero } from "../../components";
 import { FlexCenter, FlexJustify } from "../../components/ui/Boxes/Boxes";
-import styled from "styled-components";
 import FlipCard from "./FlipCard";
 
 function Clients() {
@@ -16,20 +17,20 @@ function Clients() {
 			img: IMG_AdConstructora,
 		},
 		{
-			name: "333333",
-			img: IMG_AdConstructora,
+			name: "NAME",
+			img: cell,
 		},
 		{
-			name: "444444",
-			img: IMG_AdConstructora,
+			name: "NAME",
+			img: cell,
 		},
 		{
-			name: "555555",
-			img: IMG_AdConstructora,
+			name: "NAME",
+			img: coffee,
 		},
 		{
-			name: "666666",
-			img: IMG_AdConstructora,
+			name: "NAME",
+			img: coffee,
 		},
 	];
 	return (
@@ -57,16 +58,16 @@ function Clients() {
 							<Text fontSize='40px' mb='28px' textAlign='center'>
 								{project.name}
 							</Text>
-							<FlipCard>
-								<div>
-									<Image
-										alt={project.name}
-										src={project.img}
-									/>
-								</div>
-								<div>
-									<Text>Soy la parte de atrás</Text>{" "}
-								</div>
+							<FlipCard w='392px' h='692px'>
+								<Image alt={project.name} src={project.img} />
+								<Flex alignItems='flex-end' w='100%' h='100%'>
+									<Text fontSize='2rem'>
+										test test test test test test test test
+										test test test test test test test test
+										test set test test test test test test
+										test tse tes
+									</Text>
+								</Flex>
 							</FlipCard>
 						</GridItem>
 					))}
