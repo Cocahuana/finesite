@@ -55,7 +55,9 @@ function Navigation() {
 				alignItems='center'
 			>
 				<Flex w='100%' px='35px' alignItems='center' h='100%'>
-					<SVGLogo />
+					<Link to={navLinks[2].link}>
+						<SVGLogo />
+					</Link>
 					<Spacer />
 					<IconButton
 						onClick={onToggle}
