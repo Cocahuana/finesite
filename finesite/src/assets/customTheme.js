@@ -64,6 +64,7 @@ export const chakrisTheme = extendTheme({
 				fontFamily: fonts.libreBaskerville.regular,
 				color: colors.lightYellow,
 				fontWeight: "400",
+				fontSize: ["2.5rem", "2.5rem", "2.5rem", "2.5rem", "7.5rem"],
 			},
 			h2: {
 				fontFamily: fonts.libreBaskerville.regular,
@@ -89,6 +90,13 @@ export const chakrisTheme = extendTheme({
 			p: {
 				fontFamily: fonts.montserrat,
 				color: colors.white,
+				fontSize: [
+					"0.8125rem",
+					"0.8125rem",
+					"0.9rem",
+					"1rem",
+					"1.25rem",
+				],
 			},
 		},
 	},

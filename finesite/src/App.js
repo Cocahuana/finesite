@@ -6,7 +6,7 @@ import Blogs from "./pages/Blogs/Blogs";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Clients from "./pages/Clients/Clients";
 import Contact from "./pages/Contact/Contact";
-import navData from "./components/Navigation/navData.json";
+import navData from "./data/navData.json";
 import { motion } from "framer-motion";
 import Footer from "./components/Footer/Footer";
 

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { customTheme } from "../../../assets/customTheme";
+import { Link } from "react-router-dom";
+import navData from "../../../data/navData.json";
 const CustomButtom = styled.button`
 	background-color: ${(props) => props.bg};
 	color: ${(props) => props.color};
@@ -21,6 +23,7 @@ const CustomButtom = styled.button`
 	align-items: center;
 	justify-content: center;
 	text-transform: capitalize;
+	cursor: pointer;
 `;
 
 CustomButtom.defaultProps = {
@@ -36,21 +39,24 @@ CustomButtom.defaultProps = {
 	fontWeight: "700",
 };
 function Button(props) {
-	const { children, onClick } = props;
+	const { children, onClick, goTo } = props;
+	const { pageNotFound } = navData;
 	return (
 		<>
-			<CustomButtom
-				as='a'
-				bg={props.bg}
-				minW={props.minW}
-				h={props.h}
-				px={props.px}
-				pl={props.pl}
-				pr={props.pr}
-				onClick={onClick}
-			>
-				{children}
-			</CustomButtom>
+			<Link to={goTo ?? pageNotFound}>
+				<CustomButtom
+					as='a'
+					bg={props.bg}
+					minW={props.minW}
+					h={props.h}
+					px={props.px}
+					pl={props.pl}
+					pr={props.pr}
+					onClick={onClick}
+				>
+					{children}
+				</CustomButtom>
+			</Link>
 		</>
 	);
 }

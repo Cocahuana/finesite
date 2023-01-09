@@ -3,6 +3,7 @@ import WrapperWithSVG from "./components/WrapperWithSVG";
 import ContentCard from "./components/ContentCard";
 import contentData from "./components/data/content.json";
 import Packages from "./components/Packages";
+import navData from "../../data/navData.json";
 import {
 	Button,
 	ArrowDown,
@@ -12,6 +13,8 @@ import {
 } from "../../components";
 function LandingPage() {
 	const { services } = contentData;
+	const { navLinks } = navData;
+	const clientsView = navLinks[3].link;
 	return (
 		<Box overflow='hidden'>
 			<Flex
@@ -47,20 +50,27 @@ function LandingPage() {
 						>
 							<Heading
 								as='h1'
-								fontSize='7.5rem'
+								fontSize={{ base: "2.5rem", xl: "7.5rem" }}
 								my={{ xl: "1rem" }}
-								fontWeight='400'
 							>
 								Finesite
 							</Heading>
-							<Text fontSize='3rem' my={{ xl: "1rem" }}>
+							<Text
+								fontSize={{ base: "24px", xl: "3rem" }}
+								my={{ xl: "1rem" }}
+							>
 								Branding & Design Agency
 							</Text>
-							<Text fontSize='2rem' my={{ xl: "1rem" }}>
+							<Text
+								fontSize={{ base: "18px", xl: "2rem" }}
+								my={{ xl: "1rem" }}
+							>
 								Create. Design. Inspire
 							</Text>
 						</Flex>
-						<Button w='auto'>See Our Work</Button>
+						<Button w='auto' goTo={clientsView}>
+							See Our Work
+						</Button>
 					</Flex>
 					<Flex
 						display={{ base: "none", xl: "flex" }}

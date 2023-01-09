@@ -20,8 +20,11 @@ import { customTheme } from "../../assets/customTheme";
 import LittleWrapper from "./LittleWrapper";
 import LittleCard from "./LittleCard";
 import Hero from "../../components/Hero/Hero";
+import navData from "../../data/navData.json";
 function About() {
 	const { cards, processes } = data;
+	const { navLinks } = navData;
+	const clientsView = navLinks[3].link;
 	const proccessesImgArr = [
 		IMG_UX,
 		IMG_UI,
@@ -127,7 +130,7 @@ function About() {
 						<Image pl='3.5%' src={company} alt={company} />
 					))}
 				</Flex>
-				<Button>See Our Work</Button>
+				<Button goTo={clientsView}>See Our Work</Button>
 			</Flex>
 		</Box>
 	);

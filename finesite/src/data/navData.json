@@ -2,11 +2,11 @@
 	"navLinks": [
 		{
 			"text": "About",
-			"link": "/About"
+			"link": "/about"
 		},
 		{
 			"text": "Blogs",
-			"link": "/Blogs"
+			"link": "/blogs"
 		},
 		{
 			"img": "",
@@ -14,11 +14,12 @@
 		},
 		{
 			"text": "Clients",
-			"link": "/Clients"
+			"link": "/clients"
 		},
 		{
 			"text": "Contact",
-			"link": "/Contact"
+			"link": "/contact"
 		}
-	]
+	],
+	"pageNotFound": "/Error_404"
 }

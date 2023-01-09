@@ -19,7 +19,6 @@ function ContentCard(props) {
 				{props.title}
 			</Heading>
 			<Text
-				fontSize='20px'
 				lineHeight='200%'
 				textAlign='justify'
 				fontWeight='500'

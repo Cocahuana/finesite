@@ -5,7 +5,7 @@ import coffee from "./assets/coffee.png";
 import { Button, Hero } from "../../components";
 import { FlexCenter, FlexJustify } from "../../components/ui/Boxes/Boxes";
 import FlipCard from "./FlipCard";
-
+import navData from "../../data/navData.json";
 function Clients() {
 	const projects = [
 		{
@@ -33,6 +33,8 @@ function Clients() {
 			img: coffee,
 		},
 	];
+	const { navLinks } = navData;
+	const contactForm = navLinks[4].link;
 	return (
 		<Box w='100%'>
 			<Flex w='100%' justifyContent='center'>
@@ -75,7 +77,7 @@ function Clients() {
 			</Box>
 			<Box w='100%' my='10rem'>
 				<FlexCenter>
-					<Button>Contact Us</Button>
+					<Button goTo={contactForm}>Contact Us</Button>
 				</FlexCenter>
 			</Box>
 		</Box>
