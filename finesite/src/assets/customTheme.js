@@ -59,6 +59,15 @@ export const chakrisTheme = extendTheme({
 				m: 0,
 				p: 0,
 			},
+			a: {
+				fontSize: [
+					"0.8125rem",
+					"0.8125rem",
+					"0.9rem",
+					"1rem",
+					"1.25rem",
+				],
+			},
 			// styles for the `h1,h2,h3,h4,h5`
 			h1: {
 				fontFamily: fonts.libreBaskerville.regular,

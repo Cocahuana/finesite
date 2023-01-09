@@ -6,6 +6,7 @@ import {
 	Box,
 	Spacer,
 	Collapse,
+	Stack,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import navData from "../../data/navData.json";
@@ -16,9 +17,37 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 function Navigation() {
 	const { navLinks } = navData;
 	const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
-
+	const { ff } = customTheme;
+	const items = navLinks?.map((option, i) => (
+		<Flex
+			key={i}
+			textAlign='center'
+			alignItems='center'
+			justifyContent='center'
+		>
+			{i === 2 ? (
+				<Box display={{ base: "none", xl: "block" }}>
+					<Link to={option.link}>
+						<SVGLogo />
+					</Link>
+				</Box>
+			) : (
+				<Box w='100%' h='100%'>
+					<Link to={option.link}>
+						<Text
+							fontSize={{ base: "0.8125rem", xl: "2rem" }}
+							color='white'
+							fontFamily={ff.heading}
+						>
+							{option.text}
+						</Text>
+					</Link>
+				</Box>
+			)}
+		</Flex>
+	));
 	return (
-		<Box w='full' h='10vh'>
+		<Box w='full' h='10vh' position='relative' zIndex='1'>
 			<Flex
 				display={{ base: "flex", xl: "none" }}
 				w='full'
@@ -43,51 +72,22 @@ function Navigation() {
 				</Flex>
 			</Flex>
 			<Collapse in={isOpen} animateOpacity>
-				<NavItems navItems={navLinks} />
+				<Stack bg='yellow.500' p={4} display={{ xl: "none" }}>
+					{items}
+				</Stack>
 			</Collapse>
 			<Flex
-				w='full'
 				alignItems='center'
 				justifyContent='space-evenly'
+				w='full'
 				pt='3rem'
 				display={{ base: "none", xl: "flex" }}
+				h='100%'
 			>
-				<NavItems navItems={navLinks} />
+				{items}
 			</Flex>
 		</Box>
 	);
 }
-
-const NavItems = ({ navItems }) => {
-	const { ff } = customTheme;
-	return (
-		<>
-			{navItems?.map((option, i) => (
-				<Flex
-					key={i}
-					textAlign='center'
-					alignItems='center'
-					justifyContent='center'
-				>
-					{i === 2 ? (
-						<Link to={option.link}>
-							<SVGLogo />
-						</Link>
-					) : (
-						<Link to={option.link}>
-							<Text
-								fontSize={{ base: "0.8125rem", xl: "2rem" }}
-								color='white'
-								fontFamily={ff.heading}
-							>
-								{option.text}
-							</Text>
-						</Link>
-					)}
-				</Flex>
-			))}
-		</>
-	);
-};
 
 export default Navigation;
