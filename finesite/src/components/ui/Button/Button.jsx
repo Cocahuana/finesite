@@ -28,6 +28,7 @@ const CustomButtom = styled.button`
 		min-width: 167px;
 		font-size: 1rem;
 		height: 42px;
+		margin-top: 75px;
 	}
 `;
 

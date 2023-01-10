@@ -116,13 +116,13 @@ function LandingPage() {
 			<Flex
 				bg='linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgba(37, 37, 37, 0.3) 10.94%, rgba(43, 43, 43, 0.55) 25%, rgba(48, 48, 48, 0.8) 45.83%)'
 				w='full'
-				minH='100vh'
-				mt='10rem'
+				minH='50vh'
+				mt={{ base: "0px", xl: "10rem" }}
 				alignItems='center'
 				justifyContent='center'
 				flexDirection='column'
 				fontWeight={700}
-				px={{ base: "2rem", xl: "0" }}
+				px={{ base: "1.7rem", xl: "0" }}
 			>
 				<Packages />
 			</Flex>

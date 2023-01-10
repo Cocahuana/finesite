@@ -6,21 +6,22 @@ function ContentCard(props) {
 		<Flex
 			flexDirection='column'
 			justifyContent='center'
-			alignItems={{ base: "center", xl: "flex-start" }}
+			alignItems='flex-start'
+			my={{ base: "32.5px", xl: "0px" }}
 		>
 			<Heading
 				as='h2'
 				fontSize={{ base: "1.25rem", xl: "2.5rem" }}
 				color='#F7DB5F'
-				mb='2rem'
-				mt='3rem'
-				textAlign={{ base: "center", xl: "left" }}
+				mb={{ base: "1rem", xl: "2rem" }}
+				mt={{ base: "1rem", xl: "3rem" }}
+				textAlign={{ base: "left", xl: "left" }}
 			>
 				{props.title}
 			</Heading>
 			<Text
 				lineHeight='200%'
-				textAlign='justify'
+				textAlign={{ base: "justify", xl: "justify" }}
 				fontWeight='500'
 				fontFamily={ff.base}
 			>
