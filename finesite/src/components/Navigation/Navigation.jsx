@@ -17,7 +17,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 function Navigation() {
 	const { navLinks } = navData;
 	const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
-	const { ff } = customTheme;
+	const { ff, text } = customTheme;
 	const items = navLinks?.map((option, i) => (
 		<Flex
 			key={i}
@@ -65,7 +65,11 @@ function Navigation() {
 							isOpen ? (
 								<CloseIcon w={5} h={5} />
 							) : (
-								<HamburgerIcon w={"44px"} h={"44px"} />
+								<HamburgerIcon
+									color={text.accent}
+									w={"44px"}
+									h={"44px"}
+								/>
 							)
 						}
 						variant={"ghost"}

@@ -6,7 +6,7 @@ const CustomButtom = styled.button`
 	background-color: ${(props) => props.bg};
 	color: ${(props) => props.color};
 	font-family: ${(props) => props.fontFamily};
-	font-size: ${(props) => props.fontSize};
+	font-size: ${(props) => (props.fontSize ? props.fontSize : "1.5rem")};
 	min-width: ${(props) => props.minW};
 	height: ${(props) => props.h};
 	text-decoration: none;
@@ -24,6 +24,11 @@ const CustomButtom = styled.button`
 	justify-content: center;
 	text-transform: capitalize;
 	cursor: pointer;
+	@media (max-width: 768px) {
+		min-width: 167px;
+		font-size: 1rem;
+		height: 42px;
+	}
 `;
 
 CustomButtom.defaultProps = {
@@ -31,7 +36,6 @@ CustomButtom.defaultProps = {
 	bgHover: customTheme.bg.complementary,
 	color: customTheme.text.black,
 	fontFamily: customTheme.ff.heading,
-	fontSize: "1.5rem",
 	minW: "225px",
 	h: "4.3125rem",
 	transition: "all 0.5s ease",

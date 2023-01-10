@@ -10,7 +10,7 @@ function ContentCard(props) {
 		>
 			<Heading
 				as='h2'
-				fontSize='2.5rem'
+				fontSize={{ base: "1.25rem", xl: "2.5rem" }}
 				color='#F7DB5F'
 				mb='2rem'
 				mt='3rem'

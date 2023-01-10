@@ -19,7 +19,7 @@ function LandingPage() {
 		<Box overflow='hidden'>
 			<Flex
 				w='full'
-				minH={{ base: "85vh", xl: "80vh" }}
+				minH={{ base: "30vh", xl: "80vh" }}
 				maxH={{ base: "85vh", xl: "80vh" }}
 				flexDirection={"column"}
 				justifyContent='space-between'
@@ -27,11 +27,11 @@ function LandingPage() {
 				py='2%'
 				px={{ base: "2rem", xl: "9.375rem" }}
 			>
-				<Flex w='100%' minH='70vh'>
+				<Flex w='100%' minH='30vh'>
 					<Flex
 						w={{ base: "100%", xl: "50%" }}
 						flexDirection={"column"}
-						alignItems={{ base: "center", xl: "flex-start" }}
+						alignItems='flex-start'
 						justifyContent={{
 							base: "space-evenly",
 							xl: "flex-end",
@@ -39,31 +39,28 @@ function LandingPage() {
 					>
 						<Flex
 							flexDirection={"column"}
-							alignItems={{
-								base: "center",
-								xl: "flex-start",
-							}}
+							alignItems='flex-start'
 							justifyContent='space-evenly'
 							letterSpacing='0.055rem'
 							mb='2rem'
-							h={{ base: "80%", xl: "auto" }}
+							h={{ xl: "auto" }}
 						>
 							<Heading
 								as='h1'
 								fontSize={{ base: "2.5rem", xl: "7.5rem" }}
-								my={{ xl: "1rem" }}
+								my={{ base: "3px", xl: "1rem" }}
 							>
 								Finesite
 							</Heading>
 							<Text
 								fontSize={{ base: "24px", xl: "3rem" }}
-								my={{ xl: "1rem" }}
+								my={{ base: "3px", xl: "1rem" }}
 							>
 								Branding & Design Agency
 							</Text>
 							<Text
 								fontSize={{ base: "18px", xl: "2rem" }}
-								my={{ xl: "1rem" }}
+								my={{ base: "3px", xl: "1rem" }}
 							>
 								Create. Design. Inspire
 							</Text>
@@ -80,7 +77,7 @@ function LandingPage() {
 						<PersonWithLaptop />
 					</Flex>
 				</Flex>
-				<Box>
+				<Box display={{ base: "none", xl: "block" }}>
 					<ArrowDown />
 				</Box>
 			</Flex>
