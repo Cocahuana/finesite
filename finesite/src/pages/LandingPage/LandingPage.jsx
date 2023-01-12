@@ -19,7 +19,7 @@ function LandingPage() {
 		<Box overflow='hidden'>
 			<Flex
 				w='full'
-				minH={{ base: "30vh", xl: "80vh" }}
+				minH={{ base: "30vh", xl: "90vh" }}
 				maxH={{ base: "85vh", xl: "80vh" }}
 				flexDirection={"column"}
 				justifyContent='space-between'
@@ -27,7 +27,7 @@ function LandingPage() {
 				py='2%'
 				px={{ base: "2rem", xl: "9.375rem" }}
 			>
-				<Flex w='100%' minH='30vh'>
+				<Flex w='100%' minH={{ base: "288px", xl: "728px" }}>
 					<Flex
 						w={{ base: "100%", xl: "50%" }}
 						flexDirection={"column"}
