@@ -35,7 +35,7 @@ function Navigation() {
 				<Box w='100%' h='100%'>
 					<Link to={option.link}>
 						<Text
-							fontSize={{ base: "0.8125rem", xl: "2rem" }}
+							fontSize={{ base: "0.8125rem", xl: "1.5rem" }}
 							color='white'
 							fontFamily={ff.heading}
 						>
