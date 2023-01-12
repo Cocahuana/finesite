@@ -14,6 +14,10 @@ const CustomButtom = styled.button`
 	padding: ${(props) => props.p};
 	padding-left: ${(props) => props.pl || props.px};
 	padding-right: ${(props) => props.pr || props.px};
+	margin-left: ${(props) => props.ml || props.mx};
+	margin-right: ${(props) => props.mr || props.mx};
+	margin-top: ${(props) => props.mt || props.my};
+	margin-bottom: ${(props) => props.mb || props.my};
 	line-height: ${(props) => props.lineHeight};
 	font-weight: ${(props) => props.fontWeight};
 	&:hover {
@@ -28,7 +32,7 @@ const CustomButtom = styled.button`
 		min-width: 167px;
 		font-size: 1rem;
 		height: 42px;
-		margin-top: 75px;
+		// margin-top: 75px;
 	}
 `;
 
@@ -57,6 +61,7 @@ function Button(props) {
 					px={props.px}
 					pl={props.pl}
 					pr={props.pr}
+					my={props.my}
 					onClick={onClick}
 				>
 					{children}

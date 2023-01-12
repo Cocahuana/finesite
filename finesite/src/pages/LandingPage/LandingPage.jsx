@@ -33,17 +33,17 @@ function LandingPage() {
 						flexDirection={"column"}
 						alignItems='flex-start'
 						justifyContent={{
-							base: "space-evenly",
+							base: "flex-end",
 							xl: "flex-end",
 						}}
 					>
 						<Flex
 							flexDirection={"column"}
 							alignItems='flex-start'
-							justifyContent='space-evenly'
 							letterSpacing='0.055rem'
-							mb='2rem'
+							mb={{ base: "0", xl: "2rem" }}
 							h={{ xl: "auto" }}
+							w='100%'
 						>
 							<Heading
 								as='h1'
@@ -65,7 +65,7 @@ function LandingPage() {
 								Create. Design. Inspire
 							</Text>
 						</Flex>
-						<Button w='auto' goTo={clientsView}>
+						<Button w='auto' my='1rem' goTo={clientsView}>
 							See Our Work
 						</Button>
 					</Flex>
