@@ -48,19 +48,20 @@ function LandingPage() {
 							<Heading
 								as='h1'
 								fontSize={{ base: "2.5rem", xl: "7.5rem" }}
-								my={{ base: "3px", xl: "1rem" }}
+								my={{ base: "3px", xl: "0px" }}
 							>
 								Finesite
 							</Heading>
 							<Text
 								fontSize={{ base: "24px", xl: "3rem" }}
-								my={{ base: "3px", xl: "1rem" }}
+								my={{ base: "3px", xl: "3px" }}
+								mt={{ base: "0px", xl: "0.5rem" }}
 							>
 								Branding & Design Agency
 							</Text>
 							<Text
 								fontSize={{ base: "18px", xl: "2rem" }}
-								my={{ base: "3px", xl: "1rem" }}
+								my={{ base: "3px", xl: "0px" }}
 							>
 								Create. Design. Inspire
 							</Text>
@@ -72,7 +73,7 @@ function LandingPage() {
 					<Flex
 						display={{ base: "none", xl: "flex" }}
 						w='50%'
-						py='2%'
+						py={{ base: "0px", xl: "5rem" }}
 					>
 						<PersonWithLaptop />
 					</Flex>
