@@ -11,12 +11,13 @@ const colors = {
 
 const fonts = {
 	libreBaskerville: {
-		regular: "Libre Baskerville, regular",
-		italic: "Libre Baskerville, italic",
-		bold: "Libre Baskerville, bold",
+		regular: "Libre Baskerville",
+		italic: "Libre Baskerville Italic",
+		bold: "Libre Baskerville Bold",
 	},
 	montserrat: {
 		regular: "Montserrat, regular",
+		thin: "Montserrat Thin",
 	},
 };
 
@@ -48,6 +49,19 @@ export const chakrisTheme = extendTheme({
 		heading: fonts.libreBaskerville.regular,
 		body: fonts.montserrat.regular,
 	},
+	components: {
+		Heading: {
+			baseStyle: {
+				fontWeight: "normal",
+			},
+			// sizes: {
+			//   // default size is md
+			//   xl: {
+			// 	fontSize: "50px",
+			//   },
+			// },
+		},
+	},
 	styles: {
 		global: {
 			// styles for the `body`
@@ -72,13 +86,14 @@ export const chakrisTheme = extendTheme({
 			h1: {
 				fontFamily: fonts.libreBaskerville.regular,
 				color: colors.lightYellow,
-				fontWeight: "400",
+				fontWeight: "normal",
 				fontSize: ["2.5rem", "2.5rem", "2.5rem", "2.5rem", "7.5rem"],
 			},
 			h2: {
 				fontFamily: fonts.libreBaskerville.regular,
 				color: colors.lightYellow,
-				fontWeight: "400",
+
+				fontWeight: "normal",
 			},
 			h3: {
 				fontFamily: fonts.libreBaskerville.regular,

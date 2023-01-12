@@ -14,6 +14,7 @@ function Packages() {
 				color='white'
 				my='1.5625rem'
 				textAlign={{ base: "left" }}
+				fontWeight='900'
 			>
 				Don’t know how much it’ll cost?
 			</Heading>

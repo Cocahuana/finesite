@@ -3,16 +3,20 @@
   src: local('Libre Baskerville'), url(../src/assets/fonts/libre-baskerville/LibreBaskerville-Regular.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre Baskerville Italic';
   src: local('Libre Baskerville'), url(../src/assets/fonts/libre-baskerville/LibreBaskerville-Italic.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre Baskerville Bold';
   src: local('Libre Baskerville'), url(../src/assets/fonts/libre-baskerville/LibreBaskerville-Bold.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat'), url(../src/assets/fonts/montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat thin';
+  src: local('Montserrat Thin'), url(../src/assets/fonts/montserrat/Montserrat-Thin.ttf) format('truetype');
 }
 /* Usar cuando sea el momento */
 /* *{
